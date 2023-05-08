@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+/*========= 背景動画設定のCSS ===============*/
+
+/*header設定*/
+#hero{
+    position: relative;
+    height: 100vh;
+} 
+
+#video-area{
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right:0;
+    left:0;
+    bottom:0;
+    overflow: hidden;
+}
+
+#video {
+    /*天地中央配置*/
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*縦横幅指定*/
+    width: 177.77777778vh; 
+    height: 56.25vw; 
+    min-height: 100%;
+    min-width: 100%;
+}
+
+/*見出し設定*/
+h1{
+    /*要素の配置*/
+    position:absolute;
+    /*要素を天地中央寄せ*/
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    /*見た目の調整*/
+    color:#fff;
+    text-shadow: 0 0 15px #666;
+}
+
+/*========= レイアウトのためのCSS ===============*/
+
+#container{
+  background:#fff;
+  padding:300px 0;
+  text-align: center;
+}
+
+/* common */
+    
+    ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+    
+    a {
+    text-decoration: none;
+    color: inherit;
+    transition: opacity .3s;
+    }
+    
+    a:hover {
+    opacity: .5;
+    }
+  
+    /* header */
+
+  
+  header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+  
+  
+  header ul {
+  display: flex;
+  }
+  
+  header li a {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  text-align: center;
+  }
+  
+  header li a i {
+  font-size: 32px;
+  }
+  
+  header li + li {
+    margin-left: 24px;
+    }
+    
+    header form {
+    display: none;
+    }
+    
+    header input,header button {
+    all: unset;
+    }
+    
+    header input {
+    border-bottom: 2px solid #aaa;
+    padding: 8px;
+    width: 400px;
+    }
+    
+    header button {
+    cursor: pointer;
+    }
+  
+    nav{
+        background-color: #fff;
+    }
+
+     /* footer */
+  
+  footer {
+    background: #4c4948;
+    padding: 16px 0;
+    color: #eee;
+    }
+    
+    footer .container {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+  
+    footer small {
+      font-size: 16px;
+      }
+      
+      footer li i {
+      font-size: 24px;
+      }
+      
+      footer ul {
+      display: flex;
+      }
+      
+      footer li + li {
+      margin-left: 8px;
+      }
+
+          /* plus effect */
+  p a {
+  color: #44f;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #44f;
+ }
+
+ p{
+  padding-bottom: 20px;
+ }
+
+ .mid{
+  font-weight: bold;
+  font-size: 18px;
+ }
